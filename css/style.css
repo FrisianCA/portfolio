@@ -5,6 +5,10 @@
     --pink: #ff4bfe;
     --red: #FF0000;
     --purple: #811CB0;
+    --teal: #2fa388;
+    --blue-purple: #2f4aa3;
+    --light-red: #a32f4a;
+    --dark-yellow: #a3882f;
     --black: #000000;
     --white: #FFFFFF;
     --grey: #92a5ce;
@@ -138,12 +142,12 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 3em;
 }
 
 .offering {
     flex-basis: 20%;
-    min-width: 40ch;
+    min-width: 30ch;
 }
 
 .offering>p {
@@ -153,6 +157,11 @@ span {
 .offering>h3,
 .offering>p {
     text-align: center;
+}
+
+.offering>h3 {
+    padding: 5px;
+    border-bottom: 4px solid var(--teal);
 }
 
 .about-container {
@@ -182,12 +191,12 @@ span {
     flex-basis: 40%;
 }
 
-.project>h3>a {
+.project-content>h3>a {
     cursor: pointer;
     width: 20%;
 }
 
-.project>h3>a:hover {
+.project-content>h3>a:hover {
     color: var(--red)
 }
 
