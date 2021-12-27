@@ -146,6 +146,8 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    border-bottom: 3px solid var(--teal);
+    padding-bottom: 0.5rem;
 }
 
 h3 {
@@ -159,10 +161,33 @@ h3 {
 
 .s1 {
     min-height: 100vh;
-    background: var(--bg1);
+    /* background: var(--bg1); */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(103deg, var(--bg1), var(--bg2));    background-size: 400% 400%;
+
+    -webkit-animation: s1-animation 5s ease infinite;
+    -moz-animation: s1-animation 5s ease infinite;
+    animation: s1-animation 5s ease infinite;
+}
+
+
+@-webkit-keyframes s1-animation {
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
+}
+@-moz-keyframes s1-animation {
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
+}
+@keyframes s1-animation {
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
 }
 
 .s2 {
