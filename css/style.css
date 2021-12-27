@@ -40,7 +40,8 @@ html {
     margin: 0;
     padding: 0;
     color: var(--white);
-    font-family: alaska, sans-serif
+    font-family: alaska, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -73,6 +74,7 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 1.25rem;
 }
 
 .nav-toggle {
@@ -81,10 +83,12 @@ header {
 
 .nav-toggle-label {
     display: none;
+    cursor: pointer;
 }
 
 .logo {
     grid-column: 2 / 3;
+    cursor: initial;
 }
 
 nav {
@@ -268,6 +272,7 @@ span {
 .project-content>h3>a {
     cursor: pointer;
     width: 20%;
+    border-bottom: 3px solid var(--teal)
 }
 
 .project-content>h3>a:hover {
@@ -276,6 +281,7 @@ span {
 
 .technology-used {
     font-size: 1.75rem;
+    color: var(--teal);
 }
 
 .project-description {
@@ -318,7 +324,7 @@ footer>p {
     .logo {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 
     /* Look for any nav as a preceding sibling */
@@ -422,6 +428,14 @@ footer>p {
     .project {
         max-width: 100%;
     }
+
+    .offerings {
+        flex-direction: column;
+    }
+
+    .offering {
+        flex-basis: 50%;
+    }
 }
 
 
@@ -432,11 +446,23 @@ footer>p {
     }
 
     h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.125rem;
+    }
+
+    .nav-links {
+        font-size: 1rem;
     }
 
     #see-projects {
         font-size: 1rem;
+    }
+
+    .offerings {
+        max-width: 100%;
     }
 
     .offering>h3 {
@@ -452,6 +478,24 @@ footer>p {
     }
 
     .about-content>p {
+        font-size: 1.25rem;
+    }
+
+    .project {
+        gap: 0;
+    }
+
+    .project-content>h3>a {
+        font-size: 1.75rem;
+        padding-bottom: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .technology-used {
+        font-size: 1.25rem;
+    }
+
+    .project-description {
         font-size: 1.25rem;
     }
 
