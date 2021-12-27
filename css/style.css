@@ -7,6 +7,9 @@
     --purple: #811CB0;
     --black: #000000;
     --white: #FFFFFF;
+    --grey: #92a5ce;
+    --bg1: #373347;
+    --bg2: #333947;
 }
 
 *,
@@ -15,9 +18,23 @@
     box-sizing: border-box;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white)
+}
+
 html {
     margin: 0;
     padding: 0;
+    color: var(--white);
+    font-family: alaska, sans-serif
 }
 
 body {
@@ -32,6 +49,8 @@ body {
     font: inherit;
     vertical-align: baseline;
     word-wrap: break-word;
+
+    background-color: var(--bg2);
 }
 
 header {
@@ -41,39 +60,44 @@ header {
 }
 
 h1 {
-    font-size: clamp(1vw, 2vw + 10%, 3vw);
+     font-size: 3rem;
 }
 
 h2 {
-    font-size: clamp(1vw, 1.5vw + 5%, 3vw);
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
 }
 
 .section {
     min-height: 50vh;
+    padding: 2rem;
 }
 
 .s1 {
     min-height: 100vh;
-    background: green;
+    background: var(--bg1);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .s2 {
-    background: yellow;
+    background: var(--bg2);
 }
 
 .s3 {
-    background: green;
+    background: var(--bg1);
 }
 
 .s4 {
-    background: yellow;
+    background: var(--bg2);
 }
 
 span {
-    color: red;
+    color: var(--red);
 }
 
 .flex-container {
@@ -92,6 +116,22 @@ span {
 
 .s1>.flex-container>.flex-section {
     text-align: center;
+    margin: 0;
+}
+
+#see-projects {
+    font-size: 1.5rem;
+
+    padding: 0.5rem;
+
+    border: 2px solid var(--grey);
+    border-radius: 12px;
+}
+
+#see-projects:hover {
+    color: var(--red);
+    border-color: var(--red);
+    font-size: 1.5rem;
 }
 
 #offerings {
@@ -103,6 +143,11 @@ span {
 
 .offering {
     flex-basis: 20%;
+    min-width: 40ch;
+}
+
+.offering>p {
+    font-size: 1.5rem;
 }
 
 .offering>h3,
@@ -112,9 +157,82 @@ span {
 
 .about-container {
     display: flex;
+    max-width: 80%;
 }
 
 .about-content {
-    flex-basis: 50%;
+    flex-basis: 100%;
 }
 
+.about-content>p{
+    font-size: 1.5rem;
+}
+
+.project {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.project>.project-content {
+    flex-basis: 60%;
+}
+
+.project>.project-image {
+    flex-basis: 40%;
+}
+
+.project>h3>a {
+    cursor: pointer;
+    width: 20%;
+}
+
+.project>h3>a:hover {
+    color: var(--red)
+}
+
+.technology-used {
+    font-size: 1.75rem;
+}
+
+.project-description {
+    font-size: 1.5rem;
+}
+
+/* Header Styling */
+footer {
+    background-color: var(--bg2);
+}
+
+footer>.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+}
+
+footer>.flex-container>a {
+    margin: 1em 0;
+    font-size: 1.25rem;
+}
+
+footer>p {
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* Header Styling */
+header {
+    border-bottom: 2px solid var(--grey);
+    background-color: var(--bg1);
+    width: 100vw;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
