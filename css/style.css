@@ -1,0 +1,120 @@
+/* Main Styling */
+
+:root {
+    --yellow: #FFF500;
+    --pink: #ff4bfe;
+    --red: #FF0000;
+    --purple: #811CB0;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    overflow-x: hidden;
+
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    word-wrap: break-word;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: clamp(1vw, 2vw + 10%, 3vw);
+}
+
+h2 {
+    font-size: clamp(1vw, 1.5vw + 5%, 3vw);
+}
+
+.section {
+    min-height: 50vh;
+}
+
+.s1 {
+    min-height: 100vh;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s2 {
+    background: yellow;
+}
+
+.s3 {
+    background: green;
+}
+
+.s4 {
+    background: yellow;
+}
+
+span {
+    color: red;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container>* {
+    margin: 2rem auto;
+}
+
+.s1>.flex-container {
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+.s1>.flex-container>.flex-section {
+    text-align: center;
+}
+
+#offerings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.offering {
+    flex-basis: 20%;
+}
+
+.offering>h3,
+.offering>p {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-content {
+    flex-basis: 50%;
+}
+
