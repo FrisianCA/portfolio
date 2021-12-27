@@ -15,6 +15,7 @@
     --bg1: #373347;
     --bg2: #333947;
     --bg-header: rgba(46, 42, 59, .90);
+    --nav-hover: var(--teal);
 }
 
 *,
@@ -105,14 +106,14 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: var(--nav-hover);
 }
 
 nav a::before{
     content: '';
     display: block;
     height: 5px;
-    background: black;
+    background: var(--nav-hover);
     position: absolute;
     top: -1em;
     left: 0;
@@ -281,7 +282,7 @@ span {
     font-size: 1.5rem;
 }
 
-/* Header Styling */
+/* Footer Styling */
 footer {
     background-color: var(--bg2);
 }
@@ -305,7 +306,7 @@ footer>p {
     font-size: 1rem;
 }
 
-/* Tablet Styling */
+/* Tablet and Smaller Styling */
 @media all and (max-width : 60em) {
     header {
         display: block;
@@ -410,7 +411,7 @@ footer>p {
     }
 
     .nav-links>li>a:hover {
-        color: var(--black);
+        color:  var(--nav-hover);
     }
 
     .about-container {
@@ -424,9 +425,35 @@ footer>p {
 }
 
 
-/* Mobile Styling */
+/* Mobile and Smaller Styling */
 @media all and (max-width : 40em) {
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    #see-projects {
+        font-size: 1rem;
+    }
+
+    .offering>h3 {
+        font-size: 1.75rem;
+    }
+
+    .offering>p {
+        font-size: 1.5rem;
+    }
+
+    .about-content>h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-content>p {
+        font-size: 1.25rem;
+    }
 
     footer>.flex-container {
         flex-direction: column;
