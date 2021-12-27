@@ -203,11 +203,13 @@ span {
 
     border: 2px solid var(--grey);
     border-radius: 12px;
+
+    transition: 250ms ease-in-out;
 }
 
 #see-projects:hover {
-    color: var(--red);
-    border-color: var(--red);
+    color: var(--teal);
+    border-color: var(--teal);
     font-size: 1.5rem;
 }
 
@@ -246,8 +248,22 @@ span {
     flex-basis: 50%;
 }
 
+.about-content-image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-content>p {
     font-size: 1.5rem;
+}
+
+.me-image {
+    max-width: 60%;
+    border: 3px solid var(--teal);
+    border-radius: 12px;
+    margin: 0 auto;
 }
 
 .projects {
@@ -272,11 +288,12 @@ span {
 .project-content>h3>a {
     cursor: pointer;
     width: 20%;
-    border-bottom: 3px solid var(--teal)
+    border-bottom: 3px solid var(--teal);
+    transition: 250ms ease-in-out;
 }
 
 .project-content>h3>a:hover {
-    color: var(--red)
+    color: var(--teal)
 }
 
 .technology-used {
@@ -286,6 +303,11 @@ span {
 
 .project-description {
     font-size: 1.5rem;
+}
+
+.project-image {
+    max-width: 80%;
+    box-shadow: 10px 5px 5px var(--black);
 }
 
 /* Footer Styling */
@@ -422,6 +444,7 @@ footer>p {
 
     .about-container {
         flex-direction: column;
+        gap: 2em;
         max-width: 100%;
     }
 
