@@ -368,6 +368,10 @@ footer>p {
     font-size: 1rem;
 }
 
+.contact-link:hover {
+    color: var(--teal);
+}
+
 /* Tablet and Smaller Styling */
 @media all and (max-width : 60em) {
     header {
