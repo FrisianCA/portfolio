@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
 
 /* Main Styling */
 
@@ -49,9 +49,7 @@ html {
     margin: 0;
     padding: 0;
     color: var(--white);
-    /* font-family: alaska, sans-serif;
-     */
-    font-family: 'Fredoka One', cursive;
+    font-family: 'MuseoModerno', cursive;
     scroll-behavior: smooth;
 }
 
@@ -220,10 +218,6 @@ span {
     color: var(--teal);
 }
 
-.text-span {
-    border-bottom: 2px solid var(--teal);
-}
-
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -234,7 +228,6 @@ span {
 }
 
 .flex-container>h2 {
-    font-weight: 900;
     text-shadow: 1px 1px var(--black)
 }
 
