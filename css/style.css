@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 /* Main Styling */
 
 :root {
@@ -47,7 +50,9 @@ html {
     margin: 0;
     padding: 0;
     color: var(--white);
-    font-family: alaska, sans-serif;
+    /* font-family: alaska, sans-serif;
+     */
+    font-family: 'Fredoka One', cursive;
     scroll-behavior: smooth;
 }
 
@@ -71,7 +76,7 @@ header {
     position: fixed;
     background-color: var(--bg-header);
     width: 100vw;
-
+    z-index: 999;
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
 }
@@ -245,7 +250,7 @@ span {
 
     padding: 0.5rem;
 
-    border: 2px solid var(--grey);
+    border: 4px solid var(--grey);
     border-radius: 12px;
 
     transition: 250ms ease-in-out;
@@ -286,10 +291,11 @@ span {
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
+    gap: 2em;
 }
 
 .about-content {
-    flex-basis: 50%;
+    flex-basis: 100%;
 }
 
 .about-content-image {
@@ -297,6 +303,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .about-content>p {
@@ -304,7 +311,7 @@ span {
 }
 
 .me-image {
-    max-width: 60%;
+    max-width: 100%;
     border: 3px solid var(--teal);
     border-radius: 12px;
     margin: 0 auto;
@@ -405,7 +412,7 @@ footer>p {
 }
 
 /* s2 curve */
-.custom-shape-divider-bottom-1646026812 {
+.custom-shape-divider-bottom-1646026865 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -415,14 +422,14 @@ footer>p {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1646026812 svg {
+.custom-shape-divider-bottom-1646026865 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: calc(134% + 1.3px);
     height: 58px;
 }
 
-.custom-shape-divider-bottom-1646026812 .shape-fill {
+.custom-shape-divider-bottom-1646026865 .shape-fill {
     fill: #6D545D;
 }
 
